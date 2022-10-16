@@ -1,0 +1,41 @@
+.calculator-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 270px;
+    background-color: rgb(17, 16, 16);
+    border-radius: 10px;
+}
+
+.digits {
+    display: grid;
+    grid-template-columns: repeat(4 , minmax(0, 1fr));
+    grid-template-rows: repeat(6 , minmax(0, 1fr));
+    grid-gap: 3px;
+    color: rgb(243, 243, 243);
+    font-size: 18px;;
+}
+.button {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(50, 55, 56);
+    border-radius: 10px;
+    font-weight: bold;
+}
+.display {
+    margin-bottom: 10px;
+}
+#display {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: beige;
+    box-sizing: border-box;
+}
