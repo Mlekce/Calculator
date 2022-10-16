@@ -11,7 +11,7 @@ function program(){
     else {
         twoValues(operand, num1);
     }
-}
+};
 
 function twoValues(operation, num1){
     const num2 = Number(prompt('Enter second number: '));
@@ -34,9 +34,23 @@ function twoValues(operation, num1){
     }
 }
 
+function singleValues(operation, num1){
+    switch(operation){
+        case 'pow':
+            pow(num1);
+            break
+
+        case 'sqrt':
+            SQRT(num1);
+            break
+    }
+}
+
 
 
 //Functions - math operations
+
+//Two value functions
 
 function add(a, b){
     return console.log(a + b);
@@ -49,6 +63,15 @@ function divide(a,b){
 }
 function multiply(a,b){
     return console.log(a * b);
+}
+
+//Single value functions
+
+function SQRT(num1){
+    return console.log(Math.sqrt(num1));
+}
+function pow(num1){
+    return console.log(Math.pow(num1,2));
 }
 
 program();
