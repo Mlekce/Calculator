@@ -2,7 +2,7 @@
 
 const twoNumbers = ['+', '-', '/', '*'];
 
-function program(){
+function operate(){
     const num1 = Number(prompt('Enter first number: '));
     const operand = prompt('Enter mathematical operation you want to do: ');
     if(!twoNumbers.includes(operand)){
